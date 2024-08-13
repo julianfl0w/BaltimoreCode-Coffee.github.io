@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Org Structure</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="National-Articles-of-Understanding/style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="images/favicons/favicon.png">
+</head>
+<body class="dark-mode">
+    <button id="toggle-dark-mode">Light Mode</button>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Org Structure</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <section id="main">
+
+            <!-- Disclaimer Section -->
+            <div class="container">
+                <h3>Disclaimer</h3>
+                <p>
+                    The organizational descriptions provided herein are intended solely as non-binding guidelines for informational purposes. They are not ratified or endorsed by any legal or governing authority and do not create any legal rights, obligations, or responsibilities. These descriptions are not to be construed as formal agreements or contracts, and they do not impose any binding commitments or liabilities upon any parties involved. The content herein should be used as a reference only and may be subject to change without notice. Any reliance on these descriptions is at the sole discretion and risk of the reader.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="copyright">
+                <li>&copy; Baltimore Code and Coffee 2024</li>
+            </ul>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./navbar.js"></script>
+    <script>
+        const toggleButton = document.getElementById('toggle-dark-mode');
+        const bodyElement = document.body;
+
+        toggleButton.addEventListener('click', () => {
+            bodyElement.classList.toggle('dark-mode');
+            if (bodyElement.classList.contains('dark-mode')) {
+                toggleButton.textContent = 'Light Mode';
+            } else {
+                toggleButton.textContent = 'Dark Mode';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-@import url(font-awesome.min.css);
+@import url(fontawesome.min.css);
 
 /* # Webfonts */
 @font-face{font-family: NectoMono;src:url(../fonts/CLT-NectoMono/web/NectoMono-Regular.woff2) format("woff2");font-weight: 400;font-style: normal;}  
@@ -12,7 +12,6 @@
 .font-NectoMono-regular {font-family: "NectoMono";font-weight: 400;}
 
 ::selection{background:#280124;color:#fff;}
-
 
 /* Old color */
 .newcolor{background: #2B296F}
@@ -159,7 +158,7 @@
 		}
 
 		a:hover {
-			color: #ff7496;
+			color: #32022b;
 		}
 
 	strong, b {
