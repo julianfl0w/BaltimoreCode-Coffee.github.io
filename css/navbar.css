@@ -1,0 +1,39 @@
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar container */
+.navbar {
+    background-color: #280124;
+    overflow: hidden;
+}
+
+/* Navbar items */
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add responsiveness */
+@media screen and (max-width: 600px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+        text-align: left;
+    }
+}

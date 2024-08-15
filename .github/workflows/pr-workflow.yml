@@ -1,0 +1,62 @@
+name: PR Workflow
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  update-submodule:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Get PR information
+      id: get_pr_info
+      run: |
+        pr_number="${{ github.event.pull_request.number }}"
+        pr_branch="${{ github.event.pull_request.head.ref }}"
+        pr_url="https://github.com/${{ github.repository }}/pull/${{ pr_number }}"
+        repo_url="https://github.com/${{ github.repository }}.git"
+        echo "PR_NUMBER=$pr_number" >> $GITHUB_ENV
+        echo "PR_BRANCH=$pr_branch" >> $GITHUB_ENV
+        echo "PR_URL=$pr_url" >> $GITHUB_ENV
+        echo "REPO_URL=$repo_url" >> $GITHUB_ENV
+
+    - name: Configure Git
+      run: |
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@github.com"
+
+    - name: Remove old submodule
+      run: |
+        if [ -d "${{ env.PR_NUMBER }}" ]; then
+          git submodule deinit -f -- "${{ env.PR_NUMBER }}"
+          git rm -f "${{ env.PR_NUMBER }}"
+          rm -rf .git/modules/"${{ env.PR_NUMBER }}"
+        fi
+
+    - name: Add new submodule (PR branch as submodule)
+      run: |
+        git submodule add -b "${{ env.PR_BRANCH }}" "${{ env.REPO_URL }}" "${{ env.PR_NUMBER }}"
+        git submodule update --init --recursive
+
+    - name: Fetch open PRs and generate pullrequests.html
+      run: |
+        html_file="pullrequests.html"
+        echo "<html><body><h1>Open Pull Requests</h1><ul>" > $html_file
+        prs=$(gh pr list --repo ${{ github.repository }} --json number,title,body,url)
+        echo "$prs" | jq -r '.[] | "<li><a href=\"" + .url + "\">PR #" + (.number|tostring) + ": " + .title + "</a><br/>" + (.body|gsub("\n"; "<br/>")) + "</li>"' >> $html_file
+        echo "</ul></body></html>" >> $html_file
+
+    - name: Commit changes
+      run: |
+        git add .
+        git commit -m "Update submodule and PR list for PR #${{ env.PR_NUMBER }}"
+
+    - name: Push changes
+      run: |
+        git push origin HEAD:main
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
