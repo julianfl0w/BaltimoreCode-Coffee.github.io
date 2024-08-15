@@ -5,7 +5,7 @@
 
 #main {
 	transition: opacity 1s ease, transform 1s ease;
-	padding: 2em 4em;
+	padding: 5em 4em;
 	background: #fff;
 	border-radius: 4px;
 	cursor: default;
@@ -43,30 +43,48 @@
 }
 
 
+#main.dark-mode title{
+    color: rgb(255, 255, 255);
+	font-size: 2em;
+}
 #main.dark-mode h1{
     color: rgb(255, 255, 255);
 	font-size: 2em;
 }
 #main.dark-mode h2{
-    color: red;
+    color: #87CEEB;
 	font-size: 1.5em;
 }
 #main.dark-mode h3{
-    color: purple;
+    color: rgb(255, 74, 74);
 	font-size: 1em;
 }
 #main.dark-mode h4{
-    color: green;
+    color: rgb(255, 103, 255);
 	font-size: 0.75em;
 }
 #main.dark-mode h5 {
-    color: green;
+    color: rgb(94, 242, 94);
 	font-size: 0.6em;
 }
 #main.dark-mode h6 {
     color: green;
 	font-size: 0.5em;
 }
+	
+	
+#main.longform img {
+	display: block;      /* Ensures the image is treated as a block-level element */
+	width: 90%;          /* Sets the image width to 90% of the container's width */
+	margin: 0 auto;      /* Centers the image horizontally */
+  }
+  
+#main.dark-mode img {
+	display: block;      /* Ensures the image is treated as a block-level element */
+	width: 90%;          /* Sets the image width to 90% of the container's width */
+	margin: 0 auto;      /* Centers the image horizontally */
+  }
+  
 
 
 #main.dark-mode {
@@ -97,8 +115,7 @@
 
 #main.longform{
 	text-align: left;
-	margin: 0 0;
-	padding: 1em 1em;
+	margin: 1em 1em;
 }
 
 #main.monotone h1,

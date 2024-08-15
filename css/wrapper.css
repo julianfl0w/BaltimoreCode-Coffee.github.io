@@ -125,7 +125,7 @@
 	perspective: 1000px;
 	position: relative;
 	min-height: 100%;
-	padding: 1.5em;
+	padding: 3em 5em;
 	z-index: 2;
 	background: #280124;
 }
