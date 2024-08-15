@@ -1,54 +1,39 @@
-.nav-wrapper {
-    background-color: #32022B;
-    display: flex;
-    justify-content: center;
-    padding: 0 20px;
-    position: fixed; /* Make the navbar fixed */
-    top: 0; /* Align it to the top of the screen */
-    width: 100%; /* Ensure it takes the full width of the screen */
-    z-index: 1000; /* Make sure it stays on top of other elements */
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.nav-links {
-    display: flex;
-    gap: 20px;
+/* Navbar container */
+.navbar {
+    background-color: #280124;
+    overflow: hidden;
 }
 
-.nav-link {
-    color: #fff;
-    font-size: 1.2em;
+/* Navbar items */
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
     text-decoration: none;
-    padding: 10px 20px;
-    background-color: #4A035A;
-    border-radius: 8px;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 17px;
 }
 
-.nav-link:hover {
-    background-color: #6A037B;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
 }
 
-.nav-link:active {
-    background-color: #8A039C;
-}
-
-/* Portrait mode adjustments */
-@media (max-width: 768px) {
-    .nav-wrapper {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px 0;
-        position: relative; /* Make position relative if you want it to scroll with the content */
-    }
-
-    .nav-links {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .nav-link {
+/* Add responsiveness */
+@media screen and (max-width: 600px) {
+    .navbar a {
+        float: none;
         width: 100%;
-        text-align: center;
+        text-align: left;
     }
 }

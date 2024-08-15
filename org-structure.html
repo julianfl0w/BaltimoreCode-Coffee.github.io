@@ -8,19 +8,25 @@
     <link rel="stylesheet" href="./National-Articles-of-Understanding/styles.css">
     <link rel="stylesheet" href="./National-Articles-of-Understanding/lightmode.css">
     <link rel="stylesheet" href="./National-Articles-of-Understanding/darkmode.css">
-    <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="images/favicons/favicon.png">
+    <link rel="stylesheet" href="./master.css" />
 </head>
-<body class="dark-mode">
-    <button id="toggle-dark-mode">Light Mode</button>
 
-    <!-- Navbar placeholder -->
-    <div id="navbar-placeholder"></div>
+<body>
+
+    <div class="navbar">
+        <a href="./index.html">Home</a>
+        <a href="./org-structure.html">Org Structure</a>
+        <a href="./get-involved.html">Get Involved!</a>
+        <a href="./meet-the-organizers.html">Meet the Organizers</a>
+    </div>
+
+    <button id="toggle-dark-mode">Light Mode</button>
 
     <!-- Wrapper -->
     <div id="wrapper">
         <!-- Main -->
-        <section id="main">
+        <section id="main" class="longform dark-mode">
             <!-- Disclaimer Section -->
             <div class="container">
                 <h3>Disclaimer</h3>
@@ -40,6 +46,5 @@
 
     <!-- Scripts -->
     <script src="./lightdark.js"></script>
-    <script src="./load-navbar.js"></script>
 </body>
 </html>
