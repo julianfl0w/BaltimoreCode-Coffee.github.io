@@ -61,7 +61,7 @@
 
 	font-family: "Mattone";
 	letter-spacing: 0em;
-	font-size: 3em;
+	font-size: 2em;
 	color: #280124;
 }
 
@@ -78,29 +78,30 @@
     font-weight: 400;
 }
 
-#wrapper h1{
-    color: blue;
-	font-size: 2em;
-}
-#wrapper h2{
-    color: red;
+
+#wrapper h1 {
+    color: black;
 	font-size: 1.5em;
 }
+#wrapper h2{
+    color: blue;
+	font-size: 1.2em;
+}
 #wrapper h3{
-    color: purple;
-	font-size: 1em;
+    color: red;
+	font-size: 1.0em;
 }
 #wrapper h4{
+    color: purple;
+	font-size: 0.9em;
+}
+#wrapper h5{
     color: green;
 	font-size: 0.75em;
 }
-#wrapper h5 {
+#wrapper h6{
     color: green;
 	font-size: 0.6em;
-}
-#wrapper h6 {
-    color: green;
-	font-size: 0.5em;
 }
 
 
@@ -128,6 +129,8 @@
 	padding: 3em 5em;
 	z-index: 2;
 	background: #280124;
+
+
 }
 
 
