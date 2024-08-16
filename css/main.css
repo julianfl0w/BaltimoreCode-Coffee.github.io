@@ -5,9 +5,8 @@
 
 #main {
 	transition: opacity 1s ease, transform 1s ease;
-	padding: 5em 4em;
+	padding: 1em 3em;
 	background: #fff;
-	border-radius: 4px;
 	cursor: default;
 	max-width: 100%;
 	opacity: 1;
@@ -45,31 +44,24 @@
 
 #main.dark-mode title{
     color: rgb(255, 255, 255);
-	font-size: 2em;
 }
 #main.dark-mode h1{
     color: rgb(255, 255, 255);
-	font-size: 2em;
 }
 #main.dark-mode h2{
     color: #87CEEB;
-	font-size: 1.5em;
 }
 #main.dark-mode h3{
     color: rgb(255, 74, 74);
-	font-size: 1em;
 }
 #main.dark-mode h4{
     color: rgb(255, 103, 255);
-	font-size: 0.75em;
 }
 #main.dark-mode h5 {
     color: rgb(94, 242, 94);
-	font-size: 0.6em;
 }
 #main.dark-mode h6 {
     color: green;
-	font-size: 0.5em;
 }
 	
 	
@@ -89,7 +81,6 @@
 
 #main.dark-mode {
 	transition: opacity 1s ease, transform 1s ease;
-	padding: 2em 4em;
 	background: #280124;
 	border-radius: 4px;
 	cursor: default;
@@ -115,7 +106,6 @@
 
 #main.longform{
 	text-align: left;
-	margin: 1em 1em;
 }
 
 #main.monotone h1,
