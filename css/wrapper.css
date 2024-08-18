@@ -128,11 +128,14 @@
 	min-height: 100%;
 	padding: 3em 5em;
 	z-index: 2;
-	background: #280124;
+	background: #FFF;
 
 
 }
 
+#wrapper.dark-mode{
+	background: #280124;
+}
 
 #wrapper:before {
 	content: '';
@@ -146,7 +149,6 @@
 	}
 
 }
-
 
 /* Button styles */
 #toggle-dark-mode {

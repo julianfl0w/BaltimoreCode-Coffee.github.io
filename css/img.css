@@ -31,6 +31,18 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	background-color: #FFF;
+	text-align: left;
+	padding: 5px;
+	padding: 0px 0px;
+	margin: 0px 0px;
+}
+
+
+#main.card.dark-mode {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	background-color: #280124;
 	text-align: left;
 	padding: 5px;
@@ -82,6 +94,24 @@
 	line-height: 1.2;
 	text-align: left;
 }
+
+.card-content {
+	padding: 0px 0px;
+	margin: 0px 0px;
+	line-height: 1.2;
+	text-align: left;
+	background-color: #fff;
+}
+
+.card-content.dark-mode {
+	padding: 0px 0px;
+	margin: 0px 0px;
+	line-height: 1.2;
+	text-align: left;
+	color: #fff;
+	background-color: #280124;
+}
+
 
 .imageBox {
 	position: relative;
