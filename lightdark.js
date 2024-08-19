@@ -1,11 +1,17 @@
 const toggleButton = document.getElementById('toggle-dark-mode');
 const sectionElement = document.getElementById('main'); // Change this to the ID of your section
 const wrapperElement = document.getElementById('wrapper'); // ID of the wrapper element
-const cardContentElement = document.getElementById('card-content'); // ID of the card content element
-const cardElement = document.getElementById('card'); // ID of the card content element
+const cardContentElements = document.querySelectorAll('.card-content'); 
+const cardElements = document.querySelectorAll('.card');
+const navbarElements = document.querySelectorAll('.navbar');
 
-// Store elements in a list
-const elements = [sectionElement, wrapperElement, cardContentElement, cardElement];
+// Flatten NodeLists into arrays
+const cardContentArray = Array.from(cardContentElements);
+const cardArray = Array.from(cardElements);
+const navbarArray = Array.from(navbarElements);
+
+// Store all elements in a single list
+const elements = [sectionElement, wrapperElement, ...cardContentArray, ...cardArray, ...navbarArray];
 
 // Function to switch to dark mode and store the preference
 function switchToDark() {

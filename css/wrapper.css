@@ -80,7 +80,7 @@
 
 
 #wrapper h1 {
-    color: black;
+    color: #280124;
 	font-size: 1.5em;
 }
 #wrapper h2{
@@ -156,9 +156,9 @@
     top: 20px;
     right: 20px;
     padding: 10px 20px;
-    background-color: #333;
+    background-color: transparent;
     color: #fff;
-    border: none;
+	border-color: transparent;
     cursor: pointer;
     border-radius: 5px;
 	z-index: 100;
