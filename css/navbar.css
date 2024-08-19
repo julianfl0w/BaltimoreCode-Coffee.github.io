@@ -8,6 +8,12 @@
 
 /* Navbar container */
 .navbar {
+    background-color: #fff;
+    color: #280124;
+    overflow: hidden;
+}
+
+.navbar.dark-mode {
     background-color: #280124;
     overflow: hidden;
 }
@@ -16,12 +22,18 @@
 .navbar a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: #280124;
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 1.5em;
 }
+
+.navbar.dark-mode a {
+    color: #fff;
+}
+
+
 
 /* Change color on hover */
 .navbar a:hover {

@@ -31,11 +31,15 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: #280124;
+	background-color: #FFF;
 	text-align: left;
 	padding: 5px;
-	padding: 0px 0px;
 	margin: 0px 0px;
+}
+
+
+.card.dark-mode {
+	background-color: #280124;
 }
 
 .card-image {
@@ -81,7 +85,14 @@
 	margin: 0px 0px;
 	line-height: 1.2;
 	text-align: left;
+	background-color: #fff;
 }
+
+.card-content.dark-mode {
+	color: #fff;
+	background-color: #280124;
+}
+
 
 .imageBox {
 	position: relative;
