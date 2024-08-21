@@ -73,14 +73,15 @@
 #wrapper h6 {
     color: #280124;
     line-height: 1.2;
-	margin: 1.5em 0 1.5em 0;
+	margin: 1.5em 0 0.5em 0;
     font-family: "Mattone";
     font-weight: 400;
+	
 }
 
 
 #wrapper h1 {
-    color: black;
+    color: #280124;
 	font-size: 1.5em;
 }
 #wrapper h2{
@@ -128,11 +129,14 @@
 	min-height: 100%;
 	padding: 3em 5em;
 	z-index: 2;
-	background: #280124;
+	background: #FFF;
 
 
 }
 
+#wrapper.dark-mode{
+	background: #280124;
+}
 
 #wrapper:before {
 	content: '';
@@ -147,16 +151,15 @@
 
 }
 
-
 /* Button styles */
 #toggle-dark-mode {
     position: fixed;
     top: 20px;
     right: 20px;
     padding: 10px 20px;
-    background-color: #333;
+    background-color: transparent;
     color: #fff;
-    border: none;
+	border-color: transparent;
     cursor: pointer;
     border-radius: 5px;
 	z-index: 100;
