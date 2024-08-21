@@ -11,23 +11,19 @@ Thank you for your interest in contributing to the Baltimore Code and Coffee web
 To test your changes locally, you can serve any branch using the `http-server` npm package. Follow these steps:
 
 1. **Clone the repository** if you haven't already:
+   Use GitHub Desktop File->Clone, or if you insist on the command line:
    ```bash
    git clone https://github.com/BaltimoreCode-Coffee/BaltimoreCode-Coffee.github.io.git
    ```
    
-2. **Checkout the branch** you want to test:
-   ```bash
-   git checkout <branch-name>
-   ```
-   
-3. **Install http-server** if you don't have it installed:
+2. **Install http-server** if you don't have it installed:
    ```bash
    npm install -g http-server
    ```
    
-4. **Serve the project**:
+3. **Serve the project** without caching:
    ```bash
-   http-server
+   http-server -c-1
    ```
    
 5. **Access the site** in your browser:
@@ -38,12 +34,16 @@ To test your changes locally, you can serve any branch using the `http-server` n
 Once you've made and tested your changes, you can submit them for review by creating a pull request:
 
 1. **Commit your changes**:
+   Github Desktop: Commit
+   or
    ```bash
    git add .
    git commit -m "Description of your changes"
    ```
    
 2. **Push your branch** to the remote repository:
+   Github Desktop: Push
+   or
    ```bash
    git push origin <branch-name>
    ```
