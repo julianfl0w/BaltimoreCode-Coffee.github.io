@@ -66,6 +66,36 @@
 	color: #280124;
 }
 
+.type-wrapper {
+	/*This part is important for centering*/
+	display: grid;
+	place-items: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+  }
+  
+  .typing-demo {
+	width: 13ch;
+	animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 3px solid;
+	font-family: monospace;
+	font-size: 1.5em;
+  }
+  
+  @keyframes typing {
+	from {
+	  width: 0;
+	}
+  }
+  
+  @keyframes blink {
+	50% {
+	  border-color: transparent;
+	}
+  }
+
 #wrapper h1,
 #wrapper h2,
 #wrapper h3,
@@ -74,37 +104,18 @@
 #wrapper h6 {
     color: #280124;
     line-height: 1.2;
-	margin: 1.5em 0 0.5em 0;
+	margin: 0 0;
     font-family: "Mattone";
     font-weight: 400;
-	
+	border-bottom: dotted 2px black;
 }
-
 
 #wrapper h1 {
     color: #280124;
 	font-size: 1.5em;
+	padding-bottom: 10px;
 }
-#wrapper h2{
-    color: blue;
-	font-size: 1.2em;
-}
-#wrapper h3{
-    color: red;
-	font-size: 1.0em;
-}
-#wrapper h4{
-    color: purple;
-	font-size: 0.9em;
-}
-#wrapper h5{
-    color: green;
-	font-size: 0.75em;
-}
-#wrapper h6{
-    color: green;
-	font-size: 0.6em;
-}
+
 
 
 @media screen and (max-width: 480px) {
@@ -116,23 +127,19 @@
 
 }
 
-/* Wrapper */
-
+/* Wrapper Section Fade-In Effect */
 #wrapper {
-
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	-webkit-perspective: 1000px;
-	perspective: 1000px;
-	position: relative;
-	min-height: 100vh;
-	height: 100%;
-	padding: 3em 5em;
-	z-index: 2;
-	background: #FFF;
-	box-sizing: border-box; /* Ensures padding is included within the height/width */
-
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    position: relative;
+    min-height: 100vh;
+    padding: 3em 5em;
+    z-index: 2;
+    background: #FFF;
+    box-sizing: border-box; /* Ensures padding is included within the height/width */
 }
 
 #wrapper.dark-mode{
@@ -174,4 +181,9 @@
 
 #toggle-dark-mode:hover {
     background-color: #555;
+}
+
+#home-wrapper {
+    max-height: 90vh; /* Force the height to 60vh */
+    position: relative; /* Ensure positioning context for contained elements */
 }

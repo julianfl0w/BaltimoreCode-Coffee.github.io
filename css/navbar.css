@@ -11,35 +11,73 @@
     background-color: #fff;
     color: #280124;
     overflow: hidden;
+    justify-content: center;
+    gap: 1em;
+    display: flex;
+    padding: 10px;
+    border-bottom: dotted 1px black;
 }
 
 .navbar.dark-mode {
     background-color: #280124;
     overflow: hidden;
+    border-bottom: dotted 1px white;
 }
 
-/* Navbar items */
 .navbar a {
-    float: left;
-    display: block;
-    color: #280124;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-    font-size: 1.5em;
+  --s: 0.1em;   /* the thickness of the line */
+  --c: #280124; /* the color */
+
+  color: #0000;
+  padding: .5em .5em;
+  width: 100%;
+  text-align: center;
+  padding-bottom: var(--s);
+  background:
+    linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%,
+    linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+  -webkit-background-clip: text,padding-box;
+          background-clip: text,padding-box;
+  transition: 0.5s;
+  font-family: system-ui, sans-serif;
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  width: 230px;
+  display: block;
+}
+
+.navbar a {
+  --s: 0.1em;   /* the thickness of the line */
+  --c: #280124; /* the color */
+
+  color: #0000;
+  padding: .5em .5em;
+  width: 100%;
+  text-align: center;
+  padding-bottom: var(--s);
+  background:
+    linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%,
+    linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+  -webkit-background-clip: text,padding-box;
+          background-clip: text,padding-box;
+  transition: 0.5s;
+  font-family: system-ui, sans-serif;
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  width: 230px;
+  display: block;
+}
+
+.navbar a:hover {
+  --_p: 100%;
 }
 
 .navbar.dark-mode a {
-    color: #fff;
-}
-
-
-
-/* Change color on hover */
-.navbar a:hover {
-    background-color: #ddd;
-    color: black;
-}
+    --c: #ffffff; /* Set the color to white in dark mode */
+    color: white; /* Set text color to white */
+  }
 
 /* Add responsiveness */
 @media screen and (max-width: 600px) {
