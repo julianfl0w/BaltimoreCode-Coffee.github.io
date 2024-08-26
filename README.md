@@ -21,16 +21,19 @@ sudo wget https://github.com/shiftkey/desktop/releases/download/release-3.1.1-li
 sudo gdebi GitHubDesktop-linux-3.1.1-linux1.deb
 ```
 
-2. **Clone the repository** if you haven't already:  
+2. **Fork the repository**:
+  At the top of this page, click "Fork", and make your own copy of this repository
+2. **Clone the repository**:  
    **GitHub Desktop:** 
    - Open GitHub Desktop and go to `File` -> `Clone Repository`.
-   - Select the URL tab and paste the repository link: `https://github.com/BaltimoreCode-Coffee/BaltimoreCode-Coffee.github.io.git`
+   - Select the URL tab and paste the repository link: `https://github.com/YOUR_ACCOUNT/BaltimoreCode-Coffee.github.io.git`
+   - Make sure to clone the one from your own account, so that you have write permission!
    - Choose the local path where you want to clone the repository.
    - Click `Clone`.
    
    or if you prefer the command line:
    ```bash
-   git clone https://github.com/BaltimoreCode-Coffee/BaltimoreCode-Coffee.github.io.git
+   git clone https://github.com/YOUR_ACCOUNT/BaltimoreCode-Coffee.github.io.git
    ```
 
 3. **Open VSCode** to the BaltimoreCode-Coffee.github.io folder
