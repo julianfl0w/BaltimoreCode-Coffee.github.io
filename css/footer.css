@@ -1,4 +1,3 @@
-
 /* Footer */
 
 #footer {
@@ -31,5 +30,6 @@
 
 /* Dark mode footer styling */
 #wrapper.dark-mode #footer {
-    color: #fff; /* Change the footer font color to white in dark mode */
+	color: #fff;
+	/* Change the footer font color to white in dark mode */
 }

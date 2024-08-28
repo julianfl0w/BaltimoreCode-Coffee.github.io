@@ -10,8 +10,7 @@
 
 @font-face {
   font-family: MaziusDisplay;
-  src: url(../fonts/CLT-MaziusDisplay/web/MaziusDisplay-Bold.woff2)
-    format("woff2");
+  src: url(../fonts/CLT-MaziusDisplay/web/MaziusDisplay-Bold.woff2) format("woff2");
   font-weight: 700;
   font-style: normal;
 }
@@ -67,34 +66,34 @@
 }
 
 .type-wrapper {
-	/*This part is important for centering*/
-	display: grid;
-	place-items: center;
-	margin-top: 10px;
-	margin-bottom: 10px;
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.typing-demo {
+  width: 13ch;
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 1.5em;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
   }
-  
-  .typing-demo {
-	width: 13ch;
-	animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
-	white-space: nowrap;
-	overflow: hidden;
-	border-right: 3px solid;
-	font-family: monospace;
-	font-size: 1.5em;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
   }
-  
-  @keyframes typing {
-	from {
-	  width: 0;
-	}
-  }
-  
-  @keyframes blink {
-	50% {
-	  border-color: transparent;
-	}
-  }
+}
 
 #wrapper h1,
 #wrapper h2,
@@ -114,22 +113,27 @@
   color: #280124;
   font-size: 1.5em;
 }
+
 #wrapper h2 {
   color: blue;
   font-size: 1.2em;
 }
+
 #wrapper h3 {
   color: red;
   font-size: 1em;
 }
+
 #wrapper h4 {
   color: purple;
   font-size: 0.9em;
 }
+
 #wrapper h5 {
   color: green;
   font-size: 0.75em;
 }
+
 #wrapper h6 {
   color: green;
   font-size: 0.6em;
@@ -154,7 +158,8 @@
   padding: 3em 5em;
   z-index: 2;
   background: #fff;
-  box-sizing: border-box; /* Ensures padding is included within the height/width */
+  box-sizing: border-box;
+  /* Ensures padding is included within the height/width */
 }
 
 #wrapper.dark-mode {
@@ -198,6 +203,8 @@
 }
 
 #home-wrapper {
-    max-height: 90vh; /* Force the height to 60vh */
-    position: relative; /* Ensure positioning context for contained elements */
+  max-height: 90vh;
+  /* Force the height to 60vh */
+  position: relative;
+  /* Ensure positioning context for contained elements */
 }
