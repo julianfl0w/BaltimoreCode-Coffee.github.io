@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="./css/master.css" />
   </head>
 
-  <body>
+  <body class="body">
     <div class="navbar">
       <a href="./index.html">Home</a>
       <a href="./org-structure.html">Org Structure</a>
@@ -45,29 +45,29 @@
     <button id="toggle-dark-mode">☀️</button>
 
     <!-- Wrapper -->
-    <div id="wrapper", class="dark-mode">
+    <div id="wrapper" , class="dark-mode">
       <!-- Main -->
       <section id="main" class="dark-mode">
         <h1>Organizers</h1>
         <div class="row">
           <div class="col s12 m6">
             <div class="card">
-                <div class="imageBox">
-                  <div class="imageInn">
-                    <img
-                      src="images/valentine_1.jpg"
-                      alt="Default Image"
-                      class="circle-image"
-                    />
-                  </div>
-                  <div class="hoverImg">
-                    <img
-                      src="images/valentine_body.jpeg"
-                      alt="Profile Image"
-                      class="circle-image"
-                    />
-                  </div>
+              <div class="imageBox">
+                <div class="imageInn">
+                  <img
+                    src="images/valentine_1.jpg"
+                    alt="Default Image"
+                    class="circle-image"
+                  />
                 </div>
+                <div class="hoverImg">
+                  <img
+                    src="images/valentine_body.jpeg"
+                    alt="Profile Image"
+                    class="circle-image"
+                  />
+                </div>
+              </div>
               <div class="card-content">
                 <p>
                   <b>Valentine Okundaye</b> is a Baltimore-based AI Engineer. He
@@ -118,6 +118,24 @@
         </ul>
       </footer>
     </div>
+
+    <!-- Aside - Slack Social -->
+    <aside id="slackButton" class="slack-social slack-social__container">
+      <a
+        href="https://www.baltimoretechslack.com"
+        target="_blank"
+        class="slack-social__link"
+      >
+        <button class="slack-social__button">
+          <img
+            src="./images/slack_icon.png"
+            alt="Slack icon"
+            class="slack-social__icon"
+          />
+          <p class="slack-social__cta">Join our SLACK!</p>
+        </button></a
+      >
+    </aside>
 
     <!-- Scripts -->
     <!-- Clicky Analytics -->
