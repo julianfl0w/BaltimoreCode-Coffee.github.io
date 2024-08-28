@@ -21,50 +21,59 @@
 }
 
 #main img {
-	display: block;      /* Ensures the image is treated as a block-level element */
-	width: 90%;          /* Sets the image width to 90% of the container's width */
-	margin: 0 auto;      /* Centers the image horizontally */
-  }
+    display: block;
+    /* Ensures the image is treated as a block-level element */
+    width: 90%;
+    /* Sets the image width to 90% of the container's width */
+    margin: 0 auto;
+    /* Centers the image horizontally */
+}
 
 
 @media screen and (max-width: 480px) {
-	#main {
-		padding: 4em 2em 2.5em 2em;
-		width: 100%;
-	}
+    #main {
+        padding: 4em 2em 2.5em 2em;
+        width: 100%;
+    }
 }
 
+#main.dark-mode title {
+    color: rgb(255, 255, 255);
+}
 
-#main.dark-mode title{
+#main.dark-mode h1 {
     color: rgb(255, 255, 255);
 }
-#main.dark-mode h1{
-    color: rgb(255, 255, 255);
+
+#main.dark-mode h2 {
+    color: #87CEEB;
 }
-#main.dark-mode h2{
-    color: rgb(255, 255, 255);
+
+#main.dark-mode h3 {
+    color: rgb(255, 74, 74);
 }
-#main.dark-mode h3{
-    color: rgb(255, 255, 255);
+
+#main.dark-mode h4 {
+    color: rgb(255, 103, 255);
 }
-#main.dark-mode h4{
-    color: rgb(255, 255, 255);
-}
+
 #main.dark-mode h5 {
-    color: rgb(255, 255, 255);
-}
-#main.dark-mode h6 {
-    color: grgb(255, 255, 255);
-}
-	
-#main.dark-mode {
-	transition: opacity 1s ease, transform 1s ease;
-	background: #160114;
-	color: #fff;
-	border: 2px solid #fff;
-	border-radius: 30px;
+    color: rgb(94, 242, 94);
 }
 
-#main.longform{
-	text-align: left;
+#main.dark-mode h6 {
+    color: green;
+}
+
+#main.dark-mode {
+    transition: opacity 1s ease, transform 1s ease;
+    background: #280124;
+    color: #fff;
+    border: 4px solid #fff;
+    border-radius: 30px;
+
+}
+
+#main.longform {
+    text-align: left;
 }

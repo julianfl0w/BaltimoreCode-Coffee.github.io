@@ -1,32 +1,33 @@
-
 /* Basic reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Navbar container */
 .navbar {
-    background-color: #fff;
-    color: #280124;
-    overflow: hidden;
-    justify-content: center;
-    gap: 1em;
-    display: flex;
-    padding: 10px;
-    border-bottom: dotted 1px black;
+  background-color: #fff;
+  color: #280124;
+  overflow: hidden;
+  justify-content: center;
+  gap: 1em;
+  display: flex;
+  padding: 10px;
+  border-bottom: dotted 1px black;
 }
 
 .navbar.dark-mode {
-    background-color: #280124;
-    overflow: hidden;
-    border-bottom: dotted 1px white;
+  background-color: #280124;
+  overflow: hidden;
+  border-bottom: dotted 1px white;
 }
 
 .navbar a {
-  --s: 0.1em;   /* the thickness of the line */
-  --c: #280124; /* the color */
+  --s: 0.1em;
+  /* the thickness of the line */
+  --c: #280124;
+  /* the color */
 
   color: #0000;
   padding: .5em .5em;
@@ -34,10 +35,10 @@
   text-align: center;
   padding-bottom: var(--s);
   background:
-    linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%,
-    linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
-  -webkit-background-clip: text,padding-box;
-          background-clip: text,padding-box;
+    linear-gradient(90deg, var(--c) 50%, #000 0) calc(100% - var(--_p, 0%))/200% 100%,
+    linear-gradient(var(--c) 0 0) 0% 100%/var(--_p, 0%) var(--s) no-repeat;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
   transition: 0.5s;
   font-family: system-ui, sans-serif;
   font-size: 1.5rem;
@@ -48,8 +49,10 @@
 }
 
 .navbar a {
-  --s: 0.1em;   /* the thickness of the line */
-  --c: #280124; /* the color */
+  --s: 0.1em;
+  /* the thickness of the line */
+  --c: #280124;
+  /* the color */
 
   color: #0000;
   padding: .5em .5em;
@@ -57,10 +60,10 @@
   text-align: center;
   padding-bottom: var(--s);
   background:
-    linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%,
-    linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
-  -webkit-background-clip: text,padding-box;
-          background-clip: text,padding-box;
+    linear-gradient(90deg, var(--c) 50%, #000 0) calc(100% - var(--_p, 0%))/200% 100%,
+    linear-gradient(var(--c) 0 0) 0% 100%/var(--_p, 0%) var(--s) no-repeat;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
   transition: 0.5s;
   font-family: system-ui, sans-serif;
   font-size: 1.5rem;
@@ -75,15 +78,17 @@
 }
 
 .navbar.dark-mode a {
-    --c: #ffffff; /* Set the color to white in dark mode */
-    color: white; /* Set text color to white */
-  }
+  --c: #ffffff;
+  /* Set the color to white in dark mode */
+  color: white;
+  /* Set text color to white */
+}
 
 /* Add responsiveness */
 @media screen and (max-width: 600px) {
-    .navbar a {
-        float: none;
-        width: 100%;
-        text-align: left;
-    }
+  .navbar a {
+    float: none;
+    width: 100%;
+    text-align: left;
+  }
 }
