@@ -14,13 +14,13 @@
   gap: 1em;
   display: flex;
   padding: 10px;
-  border-bottom: solid 1px black;
+  border-bottom: dotted 1px black;
 }
 
 .navbar.dark-mode {
   background-color: #280124;
   overflow: hidden;
-  border-bottom: solid 1px white;
+  border-bottom: dotted 1px white;
 }
 
 .navbar a {
@@ -41,7 +41,7 @@
   background-clip: text, padding-box;
   transition: 0.5s;
   font-family: system-ui, sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   cursor: pointer;
   text-decoration: none;
   width: 230px;
@@ -66,7 +66,7 @@
   background-clip: text, padding-box;
   transition: 0.5s;
   font-family: system-ui, sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   cursor: pointer;
   text-decoration: none;
   width: 230px;
@@ -84,16 +84,98 @@
   /* Set text color to white */
 }
 
-/* Add responsiveness */
-@media screen and (max-width: 600px) {
-  .navbar {
-    display: block;
-    text-align: left; /* optional: aligns the text to the left */
+.mobile-nav-bars{
+  display:flex;
+  flex-direction: column;
+  gap:4px;
+  border: none;
+  background-color: #fff;
+  .bar{
+    width: 25px;
+    height: 3px;
+    background-color: #000;;
   }
+}
 
-  .navbar a {
-    float: none;
-    width: 100%;
-    text-align: left;
+.main-nav{
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+button:focus {
+  outline: none;
+  background-color: #fff;
+}
+.mobile-open{
+  .navbar{
+    display: flex;
   }
+}
+
+
+/* Add responsiveness */
+@media screen and (max-width: 1042px) {
+  .navbar  {
+    flex-direction: column;
+    display: none;
+  }
+  .main-nav.mobile-open{
+      animation-name: slideDown;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+      position: absolute;
+      z-index: 3;
+    .navbar{
+      display: flex;
+      justify-content: flex-start;
+      width: 100%;
+    }
+    .navbar a{
+      text-align: left;
+    }
+    .top.bar{
+      position: relative;
+      animation-name: tiltDown;
+      animation-duration: .5s;
+      animation-fill-mode: forwards;
+    }
+    .bottom.bar{
+      animation-name: tiltUp;
+      animation-duration: .5s;
+      animation-fill-mode: forwards;
+    }
+    .middle.bar{
+      animation-name: fadeOut;
+      animation-duration: .5s;
+      animation-fill-mode: forwards;
+    }
+  }
+  @keyframes slideDown {
+    0%{height: 56px}
+    100%{height: 100vh;}
+  }
+  @keyframes tiltUp {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(45deg);}
+  }
+  @keyframes tiltDown {
+    0%{
+      top: 0px;
+      transform: rotate(0deg);
+    }
+    100%{
+      top: 14px;
+      transform: rotate(-45deg);
+    }
+  }
+  @keyframes fadeOut {
+    0%{opacity: 1}
+    50%{opacity: 0}
+    100%{opacity: 0}
+  }
+}
+/* remove for prod */
+#toggle-dark-mode{
+  display: none;
 }

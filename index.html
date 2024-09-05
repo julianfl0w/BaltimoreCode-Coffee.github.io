@@ -17,7 +17,6 @@
 
     <link rel="canonical" href="https://baltimorecodeandcoffee.com/" />
     <meta property="og:type" content="Baltimore Code and Coffee" />
-    <meta property="og:image" content="images/logo_transparent_small_original.png" />
     <meta property="og:url" content="http://baltimorecodeandcoffee.com/" />
     <meta property="og:site_name" content="Baltimore Code and Coffee" />
     <meta property="og:title" content="Baltimore Code and Coffee" />
@@ -36,14 +35,19 @@
   </head>
 
   <body id="body">
-    <div class="navbar">
-      <a href="./index.html">Home</a>
-      <a href="./constitution.html">Constitution</a>
-      <a href="./events.html">Events</a>
-      <a href="./newsletter.html">Newsletter</a>
-      <a href="./get-involved.html">Get Involved!</a>
-      <a href="./meet-the-members.html">Meet the Members</a>
-    </div>
+    <nav class="main-nav">
+      <div class="navbar">
+        <a href="./index.html">Home</a>
+        <a href="./org-structure.html">Org Structure</a>
+        <a href="./get-involved.html">Get Involved!</a>
+        <a href="./meet-the-members.html">Meet the Members</a>
+      </div>
+      <button class="mobile-nav-bars">
+        <div class="top bar"></div>
+        <div class="middle bar"></div>
+        <div class="bottom bar"></div>
+      </button>
+    </nav>
 
     <button id="toggle-dark-mode">☀️</button>
 
@@ -117,5 +121,6 @@
     <script async data-id="101449400" src="//static.getclicky.com/js"></script>
 
     <script src="./lightdark.js"></script>
+    <script src="./js/header.js"></script>
   </body>
 </html>
