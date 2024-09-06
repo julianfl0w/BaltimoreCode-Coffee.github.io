@@ -8,19 +8,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
     <link rel="icon" href="images/favicons/favicon.png">
     <link rel="stylesheet" href="./css/master.css" />
+    <script type="module" src="./js/reusableComponents.js"></script>
 </head>
 
 <body class="body">
 
-    <div class="navbar">
+    <!-- <div class="navbar">
         <a href="./index.html">Home</a>
         <a href="./constitution.html">Constitution</a>
         <a href="./events.html">Events</a>
         <a href="./newsletter.html">Newsletter</a>
         <a href="./get-involved.html">Get Involved!</a>
         <a href="./meet-the-members.html">Meet the Members</a>
-    </div>
-
+    </div> -->
+    <our-header></our-header>
     <button id="toggle-dark-mode">☀️</button>
 
     <!-- Wrapper -->
@@ -64,5 +65,7 @@
     <script src="./lightdark.js">document.addEventListener("DOMContentLoaded", function() {
         document.body.classList.add("loaded"); // Add 'loaded' class when the document is fully loaded
       });</script><script src="./lightdark.js"></script>
+
+    <script src="./js/scripts.js" type="module"></script>
 </body>
 </html>

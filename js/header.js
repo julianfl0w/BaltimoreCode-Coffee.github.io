@@ -1,6 +1,6 @@
-document.addEventListener("DOMContentLoaded", function () {
 
-    function handleMobileMenuClick(){
+export default function addNavHamburgerListener(){
+    document.querySelector('.mobile-nav-bars').addEventListener('click', function(){
         const mainNav = document.querySelector('.main-nav')
         if(!mainNav.classList.contains('mobile-open')){
             mainNav.classList.add('mobile-open')
@@ -9,13 +9,5 @@ document.addEventListener("DOMContentLoaded", function () {
             mainNav.classList.add('mobile-closed')
             mainNav.classList.remove('mobile-open')
         }
-    }
-
-    function init(){
-        document.querySelector('.mobile-nav-bars').addEventListener('click', function(){
-            handleMobileMenuClick()
-        })
-    }
-    
-    init()
-});
+    })
+}
