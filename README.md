@@ -1,6 +1,9 @@
 # BaltimoreCode-Coffee.github.io
 
-The official website of Baltimore Code and Coffee
+The official website of Baltimore Code and Coffee.  
+The main branch here is hosted directly as:  
+https://baltimorecodeandcoffee.com/  
+using GitHub pages
 
 ## Contributing to the Project
 
