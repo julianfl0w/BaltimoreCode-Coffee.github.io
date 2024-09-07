@@ -67,7 +67,7 @@
   background-clip: text, padding-box;
   transition: 0.5s;
   font-family: system-ui, sans-serif;
-  font-size: 1.5rem;
+  font-size: 16px;
   cursor: pointer;
   text-decoration: none;
   width: 230px;
@@ -121,6 +121,9 @@ button:focus {
     flex-direction: column;
     display: none;
     border-bottom: none;
+    a{
+      font-size: 1.5rem;
+    }
   }
   .mobile-nav-bars{
     display: flex;

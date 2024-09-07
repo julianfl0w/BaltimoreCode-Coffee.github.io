@@ -20,4 +20,16 @@ class OurHeader extends HTMLElement{
     }
 }
 
+class OurFooter extends HTMLElement{
+    connectedCallback(){
+        this.innerHTML = `
+            <footer id="footer">
+                <ul class="copyright">
+                    <li>&copy; Baltimore Code and Coffee 2024</li>
+                </ul>
+            </footer>
+        `
+    }
+}
 customElements.define('our-header', OurHeader)
+customElements.define('our-footer', OurFooter)
