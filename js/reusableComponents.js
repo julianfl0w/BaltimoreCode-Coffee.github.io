@@ -31,5 +31,29 @@ class OurFooter extends HTMLElement{
         `
     }
 }
+class OurSlackLink extends HTMLElement{
+    connectedCallback(){
+        this.innerHTML = `
+            <aside id="slackButton" class="slack-social slack-social__container">
+                <a
+                    href="https://join.slack.com/t/baltimoretech/shared_invite/zt-25vc0y5qv-naHml_SW42t5Cz1LZx1RTw&sa=D&source=editors&ust=1724862339979236&usg=AOvVaw1Tfr9v1MX4e-U5V_8-q_c-"
+                    target="_blank"
+                    class="slack-social__link"
+                >
+                    <button class="slack-social__button">
+                    <img
+                        src="./images/slack_icon.png"
+                        alt="Slack icon"
+                        class="slack-social__icon"
+                    />
+                    <p class="slack-social__cta">Join our SLACK!</p>
+                    </button></a
+                >
+            </aside>
+         `
+    }
+}
+
 customElements.define('our-header', OurHeader)
 customElements.define('our-footer', OurFooter)
+customElements.define('our-slack-link', OurSlackLink)

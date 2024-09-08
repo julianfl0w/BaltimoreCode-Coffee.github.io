@@ -244,10 +244,7 @@ button:focus {
     100%{opacity: 0}
   }
 }
-/* remove for prod */
-#toggle-dark-mode{
-  display: none;
-}
+
 
 /* Materialize overrides */
 @media only screen and (min-width: 601px){
