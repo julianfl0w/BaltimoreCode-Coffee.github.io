@@ -14,14 +14,14 @@
   gap: 1em;
   display: flex;
   padding: 10px;
-  border-bottom: dotted 1px black;
+  border-bottom: solid 1px black;
   width: 100%;
 }
 
 .navbar.dark-mode {
   background-color: #280124;
   overflow: hidden;
-  border-bottom: dotted 1px white;
+  border-bottom: solid 1px white;
 }
 
 .navbar a {
