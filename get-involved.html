@@ -18,18 +18,19 @@
     <meta property="og:image" content="images/logo_transparent_small_original.png" />
 
     <link rel="stylesheet" href="./css/master.css" />
+    <script type="module" src="./js/reusableComponents.js"></script>
   </head>
 
   <body class="body">
-    <div class="navbar">
+    <!-- <div class="navbar">
       <a href="./index.html">Home</a>
       <a href="./constitution.html">Constitution</a>
       <a href="./events.html">Events</a>
       <a href="./newsletter.html">Newsletter</a>
       <a href="./get-involved.html">Get Involved!</a>
       <a href="./meet-the-members.html">Meet the Members</a>
-    </div>
-
+    </div> -->
+    <our-header></our-header>
     <button id="toggle-dark-mode">☀️</button>
 
     <!-- Wrapper -->
@@ -128,30 +129,18 @@
           >
         </p>
       </section>
+
+      <our-footer></our-footer>
     </div>
 
-    <!-- Aside - Slack Social -->
-    <aside id="slackButton" class="slack-social slack-social__container">
-      <a
-        href="https://join.slack.com/t/baltimoretech/shared_invite/zt-25vc0y5qv-naHml_SW42t5Cz1LZx1RTw&sa=D&source=editors&ust=1724862339979236&usg=AOvVaw1Tfr9v1MX4e-U5V_8-q_c-"
-        target="_blank"
-        class="slack-social__link"
-      >
-        <button class="slack-social__button">
-          <img
-            src="./images/slack_icon.png"
-            alt="Slack icon"
-            class="slack-social__icon"
-          />
-          <p class="slack-social__cta">Join our SLACK!</p>
-        </button></a
-      >
-    </aside>
+    <our-slack-link></our-slack-link>
+
     <script>
       document.addEventListener("DOMContentLoaded", function() {
       document.body.classList.add("loaded"); // Adds the 'loaded' class to the body to trigger the fade-in effect 
       });
     </script>
     <script src="./lightdark.js"></script>
+    <script src="./js/scripts.js" type="module"></script>
   </body>
 </html>

@@ -33,17 +33,11 @@
     <meta name="robots" content="index, follow" />
     <meta name="googlebot" content="index, follow" />
     <link rel="stylesheet" href="./css/master.css" />
+    <script type="module" src="./js/reusableComponents.js"></script>
   </head>
 
   <body id="body">
-    <div class="navbar">
-      <a href="./index.html">Home</a>
-      <a href="./constitution.html">Constitution</a>
-      <a href="./events.html">Events</a>
-      <a href="./newsletter.html">Newsletter</a>
-      <a href="./get-involved.html">Get Involved!</a>
-      <a href="./meet-the-members.html">Meet the Members</a>
-    </div>
+    <our-header></our-header>
 
     <button id="toggle-dark-mode">☀️</button>
 
@@ -53,30 +47,11 @@
       <section id="main" , class="dark-mode">
         NEWSLETTER HERE
       </section>
-      <!-- Footer -->
-      <footer id="footer">
-        <ul class="copyright">
-          <li>&copy; Baltimore Code and Coffee 2024</li>
-        </ul>
-      </footer>
+
+      <our-footer></our-footer>
     </div>
-    <!-- Aside - Slack Social -->
-    <aside id="slackButton" class="slack-social slack-social__container">
-      <a
-        href="https://join.slack.com/t/baltimoretech/shared_invite/zt-25vc0y5qv-naHml_SW42t5Cz1LZx1RTw&sa=D&source=editors&ust=1724862339979236&usg=AOvVaw1Tfr9v1MX4e-U5V_8-q_c-"
-        target="_blank"
-        class="slack-social__link"
-      >
-        <button class="slack-social__button" type="button">
-          <img
-            src="./images/slack_icon.png"
-            alt="Slack icon"
-            class="slack-social__icon"
-          />
-          <p class="slack-social__cta">Join our SLACK!</p>
-        </button></a
-      >
-    </aside>
+   
+    <our-slack-link></our-slack-link>
 
     <!-- Scripts -->
     <!-- Clicky Analytics -->
@@ -88,5 +63,6 @@
     <script async data-id="101449400" src="//static.getclicky.com/js"></script>
 
     <script src="./lightdark.js"></script>
+    <script src="./js/scripts.js" type="module"></script>
   </body>
 </html>
