@@ -188,8 +188,8 @@
 /* Button styles */
 #toggle-dark-mode {
   position: fixed;
-  top: 20px;
-  right: 20px;
+  bottom: 15px;
+  left: 20px;
   padding: 10px 20px;
   background-color: transparent;
   color: #fff;
