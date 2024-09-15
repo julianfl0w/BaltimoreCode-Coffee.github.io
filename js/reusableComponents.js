@@ -7,8 +7,9 @@ class OurHeader extends HTMLElement{
                     <a href="./constitution.html">Constitution</a>
                     <a href="./events.html">Events</a>
                     <a href="./newsletter.html">Newsletter</a>
-                    <a href="./get-involved.html">Get Involved!</a>
-                    <a href="./meet-the-members.html">Meet the Members</a>
+                    <a href="./volunteer.html">Volunteer!</a>
+                    <a href="./sponsors.html">Sponsors</a>
+                    <a href="./about-us.html">About Us</a>
                 </div>
                 <button class="mobile-nav-bars">
                     <div class="top bar"></div>
