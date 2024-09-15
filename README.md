@@ -51,12 +51,11 @@ sudo gdebi GitHubDesktop-linux-3.1.1-linux1.deb
 7. **Serve the project** without caching:
    ```bash
    http-server -c-1
-   ```  
-   or, if you would like to be able to view with your phone over the local network  
+   ```
+   or, if you would like to be able to view with your phone over the local network
    ```
    sudo http-server -c-1 -a 0.0.0.0 -p 80
    ```
-   
 8. **Access the site** in your browser:
 
    - Open your browser and navigate to `http://localhost:8080`. You should see the website as it would appear with your changes applied.
