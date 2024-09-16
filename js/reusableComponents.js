@@ -4,7 +4,6 @@ class OurHeader extends HTMLElement {
             <nav class="main-nav">
                 <div class="navbar">
                     <a href="./index.html">Home</a>
-                    <a href="./constitution.html">Constitution</a>
                     <a href="./events.html">Events</a>
                     <a href="./newsletter.html">Newsletter</a>
                     <a href="./volunteer.html">Volunteer!</a>
