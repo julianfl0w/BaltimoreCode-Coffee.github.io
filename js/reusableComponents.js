@@ -1,10 +1,9 @@
-class OurHeader extends HTMLElement{
-    connectedCallback(){
+class OurHeader extends HTMLElement {
+    connectedCallback() {
         this.innerHTML = `
             <nav class="main-nav">
                 <div class="navbar">
                     <a href="./index.html">Home</a>
-                    <a href="./constitution.html">Constitution</a>
                     <a href="./events.html">Events</a>
                     <a href="./newsletter.html">Newsletter</a>
                     <a href="./volunteer.html">Volunteer!</a>
@@ -21,8 +20,8 @@ class OurHeader extends HTMLElement{
     }
 }
 
-class OurFooter extends HTMLElement{
-    connectedCallback(){
+class OurFooter extends HTMLElement {
+    connectedCallback() {
         this.innerHTML = `
             <footer id="footer">
                 <ul class="copyright">
@@ -32,8 +31,8 @@ class OurFooter extends HTMLElement{
         `
     }
 }
-class OurSlackLink extends HTMLElement{
-    connectedCallback(){
+class OurSlackLink extends HTMLElement {
+    connectedCallback() {
         this.innerHTML = `
             <aside id="slackButton" class="slack-social slack-social__container">
                 <a

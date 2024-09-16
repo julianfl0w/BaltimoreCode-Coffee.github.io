@@ -83,15 +83,20 @@
 
 /* Dark Mode - Inverse Highlight Color */
 #main.dark-mode ::selection {
-    background: #ffffff; /* Background color when text is selected in dark mode */
-    color: #280124; /* Text color for the selected text in dark mode */
+    background: #ffffff;
+    /* Background color when text is selected in dark mode */
+    color: #280124;
+    /* Text color for the selected text in dark mode */
 }
 
 
 /* Adding list indentation and styles for ul and ol */
-#main ul, #main ol {
-    padding-left: 1em;  /* Adds indentation to both unordered and ordered lists */
-    margin-left: 1em;   /* Adjust the margin if needed */
+#main ul,
+#main ol {
+    padding-left: 1em;
+    /* Adds indentation to both unordered and ordered lists */
+    margin-left: 1em;
+    /* Adjust the margin if needed */
 }
 
 /* Ensuring bullets for ul 
@@ -101,12 +106,14 @@
 
 /* Styling the li elements */
 #main li {
-    list-style-type: disc; /* Bullets for unordered list items */
+    list-style-type: disc;
+    /* Bullets for unordered list items */
 }
 
 /* Additional styling for ordered list items */
 #main ol {
-    list-style-type: decimal; /* Ensures numbers for ordered lists */
+    list-style-type: decimal;
+    /* Ensures numbers for ordered lists */
 }
 
 
