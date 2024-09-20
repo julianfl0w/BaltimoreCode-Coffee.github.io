@@ -10,14 +10,14 @@
     position: relative;
     text-align: center;
     width: 36em;
-    color: #280124;
+    color: #002a61;
     font-family: NectoMono;
     font-size: 18px;
     font-weight: 400;
-    border: 2px solid #280124;
+    border: 2px solid #002a61;
     border-radius: 30px;
-    -webkit-filter: drop-shadow(2px 2px 0px #280124);
-    filter: drop-shadow(4px 4px 0px #280124);
+    -webkit-filter: drop-shadow(2px 2px 0px #002a61);
+    filter: drop-shadow(4px 4px 0px #002a61);
 }
 
 #main img {
@@ -74,7 +74,7 @@
 
 #main.dark-mode {
     transition: opacity 1s ease, transform 1s ease;
-    background: #280124;
+    background: #002a61;
     color: #fff;
     border: 4px solid #fff;
     border-radius: 30px;
@@ -85,7 +85,7 @@
 #main.dark-mode ::selection {
     background: #ffffff;
     /* Background color when text is selected in dark mode */
-    color: #280124;
+    color: #002a61;
     /* Text color for the selected text in dark mode */
 }
 

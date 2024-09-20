@@ -8,7 +8,7 @@
 /* Navbar container */
 .navbar {
   background-color: #fff;
-  color: #280124;
+  color: #002a61;
   overflow: hidden;
   justify-content: center;
   gap: 1em;
@@ -19,7 +19,7 @@
 }
 
 .navbar.dark-mode {
-  background-color: #280124;
+  background-color: #002a61;
   overflow: hidden;
   border-bottom: solid 1px white;
 }
@@ -27,7 +27,7 @@
 .navbar a {
   --s: 0.1em;
   /* the thickness of the line */
-  --c: #280124;
+  --c: #002a61;
   /* the color */
 
   color: #0000;
@@ -52,7 +52,7 @@
 .navbar a {
   --s: 0.1em;
   /* the thickness of the line */
-  --c: #280124;
+  --c: #002a61;
   /* the color */
 
   color: #0000;

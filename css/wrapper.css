@@ -48,7 +48,7 @@
 }
 
 ::selection {
-  background: #280124;
+  background: #002a61;
   color: #fff;
 }
 
@@ -62,7 +62,7 @@
   font-family: "Mattone";
   letter-spacing: 0em;
   font-size: 2em;
-  color: #280124;
+  color: #002a61;
 }
 
 .type-wrapper {
@@ -101,7 +101,7 @@
 #wrapper h4,
 #wrapper h5,
 #wrapper h6 {
-  color: #280124;
+  color: #002a61;
   line-height: 1.2;
   margin: 1.5em 0 0.5em 0;
   font-family: "Mattone";
@@ -110,7 +110,7 @@
 }
 
 #wrapper h1 {
-  color: #280124;
+  color: #002a61;
   font-size: 1.5em;
 }
 
@@ -163,7 +163,7 @@
 }
 
 #wrapper.dark-mode {
-  background: #280124;
+  background: #002a61;
   border-bottom: solid 2px white;
 }
 
