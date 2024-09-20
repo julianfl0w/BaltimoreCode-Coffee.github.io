@@ -1,4 +1,4 @@
-# BaltimoreCode-Coffee.github.io
+# Code Collective 
 
 The official website of Baltimore Code Collective.  
 The main branch here is hosted directly as:  
