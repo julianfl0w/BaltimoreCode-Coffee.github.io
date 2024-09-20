@@ -4,7 +4,7 @@
 /* Main Section Styles */
 #main {
     padding: 1em 3em;
-    background: #e1e1e1;
+    background: #6ec0ff;
     cursor: default;
     max-width: 100%;
     position: relative;
@@ -53,7 +53,7 @@
 }
 
 #main.dark-mode h3 {
-    color: rgb(255, 74, 74);
+    color: #87CEEB;
     border-bottom: solid 2px white;
 }
 

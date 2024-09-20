@@ -9,7 +9,7 @@ import pytz
 utc_timezone = pytz.timezone("UTC")
 est_timezone = pytz.timezone("US/Eastern")
 
-# URL of the Baltimore Code and Coffee Meetup group
+# URL of the Baltimore Code Collective Meetup group
 MEETUP_URL = "https://www.meetup.com/baltimore-code-and-coffee/"
 
 
@@ -50,7 +50,7 @@ def parse_meetup_html(page_content):
 
 def create_html(events):
     """Creates an HTML string for the events."""
-    html_content = "<h1>Upcoming Events for Baltimore Code and Coffee</h1>"
+    html_content = "<h1>Upcoming Events for Baltimore Code Collective</h1>"
 
     if not events:
         html_content += "<p>No upcoming events at this time.</p>"

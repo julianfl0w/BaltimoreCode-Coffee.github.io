@@ -15,7 +15,7 @@
   height: 45px;
   border-radius: 12px;
   background-color: white;
-  border: solid #600256 3px;
+  border: solid #002a61 3px;
   box-shadow: #bdbdbd 0px 2px 4px;
   cursor: pointer;
   display: flex;
@@ -38,6 +38,6 @@
 /* DARK MODE */
 #slackButton.dark-mode .slack-social__button {
   background-color: white;
-  color: #280124;
+  color: #002a61;
   box-shadow: #b7b7b7b7 0px 2px 4px;
 }

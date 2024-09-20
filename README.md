@@ -1,13 +1,13 @@
 # BaltimoreCode-Coffee.github.io
 
-The official website of Baltimore Code and Coffee.  
+The official website of Baltimore Code Collective.  
 The main branch here is hosted directly as:  
-https://baltimorecodeandcoffee.com/  
+https://baltimorecodecollective.com/  
 using GitHub pages
 
 ## Contributing to the Project
 
-Thank you for your interest in contributing to the Baltimore Code and Coffee website! Below are instructions to help you get started with testing your changes locally, creating pull requests, and ensuring your contributions follow our guidelines.
+Thank you for your interest in contributing to the Baltimore Code Collective website! Below are instructions to help you get started with testing your changes locally, creating pull requests, and ensuring your contributions follow our guidelines.
 
 ### How To Get the files, Test Locally, and create a Pull Request (Contribute!)
 

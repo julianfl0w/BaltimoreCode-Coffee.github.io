@@ -4,7 +4,7 @@ class OurHeader extends HTMLElement {
             <nav class="main-nav">
                 <div class="navbar">
                     <a href="./index.html">Home</a>
-                    <a href="./events.html">Events</a>
+                    <a href="./calendar.html">Calendar</a>
                     <a href="./newsletter.html">Newsletter</a>
                     <a href="./volunteer.html">Volunteer!</a>
                     <a href="./sponsors.html">Sponsors</a>
@@ -25,7 +25,7 @@ class OurFooter extends HTMLElement {
         this.innerHTML = `
             <footer id="footer">
                 <ul class="copyright">
-                    <li>&copy; Baltimore Code and Coffee 2024</li>
+                    <li>&copy; Code Collective 2024</li>
                 </ul>
             </footer>
         `

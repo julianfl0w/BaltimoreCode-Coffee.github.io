@@ -28,13 +28,13 @@
 	width: 3.75em;
 	height: 3.75em;
 	border-radius: 100%;
-	border: solid 0px #280124;
+	border: solid 0px #002a61;
 	line-height: 3.65em;
 	overflow: hidden;
 	text-align: center;
 	text-indent: 3.75em;
 	white-space: nowrap;
-	background: #280124;
+	background: #002a61;
 
 }
 
@@ -67,7 +67,7 @@
 }
 
 .icons li a:hover {
-	border-color: #280124;
+	border-color: #002a61;
 }
 
 @media screen and (max-width: 480px) {

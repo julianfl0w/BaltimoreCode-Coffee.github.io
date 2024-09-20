@@ -101,7 +101,6 @@
 #wrapper h4,
 #wrapper h5,
 #wrapper h6 {
-  color: #002a61;
   line-height: 1.2;
   margin: 1.5em 0 0.5em 0;
   font-family: "Mattone";
@@ -115,12 +114,12 @@
 }
 
 #wrapper h2 {
-  color: blue;
+  color: rgb(0, 0, 255);
   font-size: 1.2em;
 }
 
 #wrapper h3 {
-  color: red;
+  color: rgb(0, 72, 197);
   font-size: 1em;
 }
 

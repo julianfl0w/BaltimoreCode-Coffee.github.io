@@ -35,7 +35,7 @@ def scrub_styles(html_content):
     scrubbed = scrubbed.encode("ascii", "ignore").decode("ascii")
     scrubbed = scrubbed.replace(
         'class="c5 doc-content"><div><p class="c0 c6"><span class="c2"></span></p></div><p class="c28 c27 c6 title" id="h.pinny9283ld5"><span class="c24"></span></p><p class="c27 c28 title" id="h.1iih1san2ov0"><span class="c24">Constitution and Bylaws</span></p><p class="c22"><span class="c24">',
-        "<h1>Constitution and Bylaws of Baltimore Code and Coffee</h1>",
+        "<h1>Constitution and Bylaws of Baltimore Code Collective</h1>",
     )
     return scrubbed
 
