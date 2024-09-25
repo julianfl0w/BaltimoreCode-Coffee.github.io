@@ -2,11 +2,11 @@ class OurHeader extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
             <nav class="main-nav">
-                <div class="navbar">
+                <div class="navbar dark-mode">
                     <a href="./index.html">Home</a>
                     <a href="./calendar.html">Calendar</a>
                     <a href="./newsletter.html">Newsletter</a>
-                    <a href="./volunteer.html">Volunteer!</a>
+                    <a href="./getinvolved.html">Get Involved!</a>
                     <a href="./sponsors.html">Sponsors</a>
                     <a href="./about-us.html">About Us</a>
                 </div>

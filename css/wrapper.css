@@ -156,7 +156,7 @@
   height: 100%;
   padding: 3em 5em;
   z-index: 2;
-  background: #fff;
+  background: #ade0ff;
   box-sizing: border-box;
   /* Ensures padding is included within the height/width */
 }

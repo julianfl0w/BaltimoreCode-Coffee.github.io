@@ -1,13 +1,13 @@
 # Code Collective 
 
-The official website of Baltimore Code Collective.  
+The official website of Code Collective.  
 The main branch here is hosted directly as:  
-https://baltimorecodecollective.com/  
+https://baltimorecodecollective.us/  
 using GitHub pages
 
 ## Contributing to the Project
 
-Thank you for your interest in contributing to the Baltimore Code Collective website! Below are instructions to help you get started with testing your changes locally, creating pull requests, and ensuring your contributions follow our guidelines.
+Thank you for your interest in contributing to the Code Collective website! Below are instructions to help you get started with testing your changes locally, creating pull requests, and ensuring your contributions follow our guidelines.
 
 ### How To Get the files, Test Locally, and create a Pull Request (Contribute!)
 

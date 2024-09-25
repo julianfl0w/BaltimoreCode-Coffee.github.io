@@ -49,29 +49,8 @@ function switchToLight() {
   localStorage.setItem("mode", "light");
 }
 
-// Function to set mode based on the time and user's preference
-function setModeBasedOnTime() {
-  const mode = localStorage.getItem("mode");
-
-  if (mode) {
-    if (mode === "dark") {
-      switchToDark();
-    } else {
-      switchToLight();
-    }
-  } else {
-    // Default mode based on time
-    const currentHour = new Date().getHours();
-    if (currentHour >= 7 && currentHour < 19) {
-      switchToLight();
-    } else {
-      switchToDark();
-    }
-  }
-}
-
 // Initial mode setting based on time or user preference
-setModeBasedOnTime();
+switchToDark();
 
 // Toggle mode on button click
 toggleButton.addEventListener("click", () => {

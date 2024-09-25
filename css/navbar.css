@@ -121,7 +121,7 @@ button:focus {
 
 
 /* Add responsiveness */
-@media screen and (max-width: 1042px) {
+@media screen and (orientation: portrait) {
   .navbar {
     flex-direction: column;
     display: none;
@@ -314,7 +314,7 @@ button:focus {
 
 
 /* Materialize overrides */
-@media only screen and (min-width: 601px) {
+@media only screen and (orientation: portrait) {
   .navbar {
     line-height: initial;
   }

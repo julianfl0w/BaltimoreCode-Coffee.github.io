@@ -10,7 +10,7 @@ utc_timezone = pytz.timezone("UTC")
 est_timezone = pytz.timezone("US/Eastern")
 
 # URL of the Baltimore Code Collective Meetup group
-MEETUP_URL = "https://www.meetup.com/baltimore-code-and-coffee/"
+MEETUP_URL = "https://www.meetup.com/code-collective/"
 
 
 def fetch_meetup_page(url):
@@ -91,7 +91,7 @@ def create_html(events):
     return html_content
 
 
-def save_html_file(content, filename="events.html"):
+def save_html_file(content, filename="calendar.html"):
     """Saves the HTML content to a file."""
     with open(filename, "w", encoding="utf-8") as file:
         file.write(content)

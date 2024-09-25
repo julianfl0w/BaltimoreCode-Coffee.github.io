@@ -15,4 +15,4 @@ User-agent: Googlebot
 Disallow:
 
 # Sitemap location
-Sitemap: https://baltimorecodecollective.com/sitemap.xml
+Sitemap: https://baltimorecodecollective.us/sitemap.xml
