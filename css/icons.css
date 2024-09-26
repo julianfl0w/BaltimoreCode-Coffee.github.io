@@ -70,7 +70,7 @@
 	border-color: #002a61;
 }
 
-@media screen and (orientation: portrait) {
+@media screen and (max-width: 800) {
 
 	.icons li a:before {
 		font-size: 1.5rem;

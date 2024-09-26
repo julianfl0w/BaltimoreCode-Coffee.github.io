@@ -30,7 +30,7 @@
 }
 
 
-@media screen and (orientation: portrait) {
+@media screen and (max-width: 800) {
     #main {
         padding: 4em 2em 2.5em 2em;
         width: 100%;

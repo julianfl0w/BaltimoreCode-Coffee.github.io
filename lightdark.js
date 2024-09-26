@@ -6,11 +6,13 @@ const slackButton = document.getElementById("slackButton");
 const cardContentElements = document.querySelectorAll(".card-content");
 const cardElements = document.querySelectorAll(".card");
 const navbarElements = document.querySelectorAll(".navbar");
+const mainnavElements = document.querySelectorAll("main-nav");
 
 // Flatten NodeLists into arrays
 const cardContentArray = Array.from(cardContentElements);
 const cardArray = Array.from(cardElements);
 const navbarArray = Array.from(navbarElements);
+const mainnavArray = Array.from(mainnavElements);
 
 // Store all elements in a single list
 const elements = [
@@ -21,6 +23,7 @@ const elements = [
   ...cardContentArray,
   ...cardArray,
   ...navbarArray,
+  ...mainnavArray
 ];
 
 // Function to switch to dark mode and store the preference
@@ -50,7 +53,9 @@ function switchToLight() {
 }
 
 // Initial mode setting based on time or user preference
-switchToDark();
+document.addEventListener("DOMContentLoaded", (event) => {
+  switchToDark()
+})
 
 // Toggle mode on button click
 toggleButton.addEventListener("click", () => {

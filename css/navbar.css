@@ -8,7 +8,7 @@
 /* Navbar container */
 .navbar {
   background-color: #fff;
-  color: #002a61;
+  color: #a0d6ff;
   overflow: hidden;
   justify-content: center;
   gap: 1em;
@@ -90,7 +90,7 @@
   flex-direction: column;
   gap: 4px;
   border: none;
-  background-color: #fff;
+  background-color: #a0d6ff;
 
   .bar {
     width: 25px;
@@ -102,7 +102,15 @@
 
 .main-nav {
   height: auto;
-  background-color: #fff;
+  background-color: #a0d6ff;
+  display: flex;
+  justify-content: center;
+  /* padding: 20px; */
+}
+
+.main-nav.dark-mode{
+  height: auto;
+  background-color: #002a61;
   display: flex;
   justify-content: center;
   /* padding: 20px; */
@@ -121,7 +129,7 @@ button:focus {
 
 
 /* Add responsiveness */
-@media screen and (orientation: portrait) {
+@media screen and (max-width: 800px) {
   .navbar {
     flex-direction: column;
     display: none;
@@ -314,7 +322,7 @@ button:focus {
 
 
 /* Materialize overrides */
-@media only screen and (orientation: portrait) {
+@media only screen and (max-width: 800px) {
   .navbar {
     line-height: initial;
   }
