@@ -3,7 +3,7 @@
 
 /* Main Section Styles */
 #main {
-    padding: 1em 3em;
+    padding: 2em 1em;
     background: #a0d6ff;
     cursor: default;
     max-width: 100%;
@@ -32,7 +32,7 @@
 
 @media screen and (max-width: 800) {
     #main {
-        padding: 4em 2em 2.5em 2em;
+        padding: 0em 2em 2.5em 2em;
         width: 100%;
     }
 }

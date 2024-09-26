@@ -90,19 +90,26 @@
   flex-direction: column;
   gap: 4px;
   border: none;
-  background-color: #a0d6ff;
+  background-color: #002a61;
 
   .bar {
     width: 25px;
     height: 3px;
-    background-color: #000;
+    background-color: #fff;
+    ;
+  }
+
+  .bar.dark-mode {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
     ;
   }
 }
 
 .main-nav {
   height: auto;
-  background-color: #a0d6ff;
+  background-color: #002a61;
   display: flex;
   justify-content: center;
   /* padding: 20px; */
@@ -118,7 +125,7 @@
 
 button:focus {
   outline: none;
-  background-color: #fff;
+  background-color: #002a61;
 }
 
 .mobile-open {
