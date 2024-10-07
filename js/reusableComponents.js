@@ -5,7 +5,7 @@ class OurHeader extends HTMLElement {
                 <div class="navbar dark-mode">
                     <a href="./index.html">Home</a>
                     <a href="./calendar.html">Calendar</a>
-                    <a href="./newsletter.html">Newsletter</a>
+                    <a href="./curriculum.html">Curriculum</a>
                     <a href="./getinvolved.html">Get Involved!</a>
                     <a href="./sponsors.html">Sponsors</a>
                     <a href="./about-us.html">About Us</a>

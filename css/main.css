@@ -42,6 +42,11 @@
     border-bottom: solid 2px white;
 }
 
+#main.dark-mode a {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
 #main.dark-mode h1 {
     color: rgb(255, 255, 255);
     border-bottom: solid 2px white;

@@ -15,15 +15,11 @@
     />
     <link rel="icon" href="images/favicons/favicon.png" />
 
-    <link rel="canonical" href="https://baltimorecodecollective.us/" />
-    <meta property="og:type" content="Baltimore Code Collective" />
-    <meta
-      property="og:image"
-      content="images/logo_transparent_small_original.png"
-    />
-    <meta property="og:url" content="http://baltimorecodecollective.us/" />
-    <meta property="og:site_name" content="Baltimore Code Collective" />
-    <meta property="og:title" content="Baltimore Code Collective" />
+    <link rel="canonical" href="https://codecollective.us/" />
+    <meta property="og:type" content="Code Collective" />
+    <meta property="og:url" content="https://codecollective.us/" />
+    <meta property="og:site_name" content="Code Collective" />
+    <meta property="og:title" content="Code Collective" />
     <meta
       property="og:description"
       content="Professional Development through Team Building."
@@ -36,48 +32,26 @@
     <meta name="robots" content="index, follow" />
     <meta name="googlebot" content="index, follow" />
     <link rel="stylesheet" href="./css/master.css" />
+    <script type="module" src="./js/reusableComponents.js"></script>
   </head>
 
   <body id="body">
-    <div class="navbar">
-      <a href="./index.html">Home</a>
-      <a href="./constitution.html">Constitution</a>
-      <a href="./events.html">Events</a>
-      <a href="./newsletter.html">Newsletter</a>
-      <a href="./get-involved.html">Get Involved!</a>
-      <a href="./meet-the-members.html">Meet the Members</a>
-    </div>
+    <our-header></our-header>
 
     <button id="toggle-dark-mode">☀️</button>
 
     <!-- Wrapper -->
     <div id="wrapper" , class="dark-mode">
       <!-- Main -->
-      <section id="main" , class="dark-mode">EVENTS_HTML</section>
-      <!-- Footer -->
-      <footer id="footer">
-        <ul class="copyright">
-          <li>&copy; Baltimore Code Collective 2024</li>
-        </ul>
-      </footer>
+      <section id="main" , class="longform dark-mode">
+        <header class=""></header>
+        CONTENT
+      </section>
+
+      <our-footer></our-footer>
     </div>
-    <!-- Aside - Slack Social -->
-    <aside id="slackButton" class="slack-social slack-social__container">
-      <a
-        href="https://join.slack.com/t/baltimoretech/shared_invite/zt-25vc0y5qv-naHml_SW42t5Cz1LZx1RTw&sa=D&source=editors&ust=1724862339979236&usg=AOvVaw1Tfr9v1MX4e-U5V_8-q_c-"
-        target="_blank"
-        class="slack-social__link"
-      >
-        <button class="slack-social__button" type="button">
-          <img
-            src="./images/slack_icon.png"
-            alt="Slack icon"
-            class="slack-social__icon"
-          />
-          <p class="slack-social__cta">Join our SLACK!</p>
-        </button></a
-      >
-    </aside>
+
+    <our-slack-link></our-slack-link>
 
     <!-- Scripts -->
     <!-- Clicky Analytics -->
@@ -86,9 +60,8 @@
         document.body.classList.add("loaded"); // Add 'loaded' class when the document is fully loaded
       });
     </script>
-    <script async data-id="101449400" src="//static.getclicky.com/js"></script>
-
-    <script src="./js/scripts.js" type="module"></script>
     <script src="./lightdark.js"></script>
+    <script src="./js/scripts.js" type="module"></script>
+    <script async data-id="101449400" src="//static.getclicky.com/js"></script>
   </body>
 </html>
